@@ -14,16 +14,16 @@
     <div class="container mt-3">
       <h2>Mes onglets</h2>
       <ul class="nav nav-tabs" role="tablist">
-        <li class="nav-item">
-          <a class="nav-link" data-bs-toggle="tab" href="#signin">Authentification</a>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link active" data-bs-toggle="tab" href="#signin">Authentification</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item" role="presentation">
           <a class="nav-link" data-bs-toggle="tab" href="#signup">Enregistrement</a>
         </li>
       </ul>
 
       <div class="tab-content">
-        <div id="signin" class="container tab-pane active"><br>
+        <div id="signin" class="container tab-pane active show"><br>
           <form class="row g-3 needs-validation">
             <div class="col-md-4 ">
               <label for="signin-email" class="form-label">email</label>
@@ -39,8 +39,8 @@
               <div class="col-md-2">
                 <button class="btn btn-primary" type="submit">Se connecter</button>
               </div>
-              <div class="col-md-4">
-                <a class="text-primary" type="submit">Vous avez oublié votre mot de passe ?</a>
+              <div class="col-md-8">
+                <button class="btn btn-outline-danger" type="submit">Vous avez oublié votre mot de passe ?</button>
               </div>
             </div>
           </form>
@@ -70,13 +70,15 @@
             <div class="row g-3">
               <div class="col-md-8">
                 <label for="signup-pwd" class="form-label">Mot de passe</label>
-                <input type="password" class="form-control" id="signup-pwd" placeholder="Votre mot de passe..." required>
+                <input type="password" class="form-control" id="signup-pwd" placeholder="Votre mot de passe..."
+                       required>
               </div>
             </div>
-
             <div class="row g-3">
-              <button class="btn btn-outline-danger col-md-3 mr-3" type="reset">Annuler</button>
-              <button class="btn btn-primary col-md-3 ml-3" type="submit">S'inscrire</button>
+              <div class="col-md-8">
+                <button class="btn btn-primary col-md-3 me-3" type="submit">S'inscrire</button>
+                <button class="btn btn-outline-danger col-md-3 ms-3" type="reset">Annuler</button>
+              </div>
             </div>
           </form>
         </div>
